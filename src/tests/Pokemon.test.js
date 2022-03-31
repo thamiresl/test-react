@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+/* import userEvent from '@testing-library/user-event'; */
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import Pokemon from '../components/Pokemon';
@@ -76,7 +76,7 @@ describe('Teste se é renderizado card com as informações de determinado poké
     expect(pokemonLink).toHaveAttribute('href', '/pokemons/25');
   });
 
-/*   it('Teste o redirecionamento da aplicação para a página de detalhes de Pokémon', () => {
+  /*   it('Teste o redirecionamento da aplicação para a página de detalhes de Pokémon', () => {
     const { history } = renderWithRouter(<Pokemon
       pokemon={ mockPokemon }
       isFavorite={ false }
